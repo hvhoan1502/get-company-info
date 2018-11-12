@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const MyMusic = require('../plugins/MyMusic');
 
 // Require router files
 const { companyRouter } = require('./controllers/company.router');
@@ -27,6 +28,15 @@ app.use((req, res, next) => {
 // Run index pages
 app.get('/', ( req, res ) => {
     res.render('pages/index');
+});
+
+app.get('/login', (req, res) => {
+    res.render('pages/login');
+});
+
+app.get('/music', (req, res) => {
+    const listMusic = MyMusic.listMusic;
+    res.render('pages/music', { listMusic });
 });
 
 // User router
