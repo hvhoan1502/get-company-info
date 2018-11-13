@@ -1,12 +1,12 @@
-<%- include('../partials/header'); %>
+<%- include('../../partials/header'); %>
 <hr>
 <br>
 <div class="container">
-    <div class="row animate-box">
-        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2>My Favorite Music</h2>
-        </div>
-        <hr>
+    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+        <h2>My Favorite Music</h2>
+    </div>
+    <br> <br> <br>
+    <div class="row animate-box" style="background-image: url(/public/gif/music.gif);">
         <% listMusic.forEach(item => { %>
         <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
             <h4>
@@ -23,9 +23,9 @@
     </div>
 </div>
 
-<hr> <hr>
+<br><hr><br>
 
-<%- include('../partials/footer'); %>
+<%- include('../../partials/footer'); %>
 <style>
     #fh5co-blog {
         display: none;

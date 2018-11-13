@@ -1,19 +1,22 @@
-<%- include('../partials/header'); %>
+<%- include('../../partials/header'); %>
 
 <div class="container">
-    <form action="action_page.php">
+    <form action="/login" method="POST">
         <div class="imgcontainer">
             <img src="/public/8.jpg" alt="Avatar" class="avatar">
         </div>
 
         <div class="container">
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="text" placeholder="Enter Username" name="name" required>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
 
             <button type="submit">Login</button>
+            <% if (error) {%>
+                <label id="message"><%= error.message %></label> <br>
+            <% } %>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
@@ -26,7 +29,7 @@
     </form>
 </div>
 
-<%- include('../partials/footer'); %>
+<%- include('../../partials/footer'); %>
 
 <style>
     form {
@@ -46,7 +49,7 @@
 
     /* Set a style for all buttons */
     button {
-        background-color: #4CAF50;
+        background-color: #989696;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
@@ -95,6 +98,12 @@
         padding-top: 16px;
     }
 
+    /* Show message when login fail*/
+    #message {
+        color: red;
+        font-weight: initial;
+    }
+
     /* Change styles for span and cancel button on extra small screens */
     @media screen and (max-width: 300px) {
         span.psw {
@@ -107,3 +116,9 @@
         }
     }
 </style>
+
+<script>
+    setTimeout(() => {
+        document.getElementById('message').style.display = 'none';
+    }, 5000);
+</script>

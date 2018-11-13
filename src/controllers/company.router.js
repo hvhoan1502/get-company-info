@@ -7,7 +7,7 @@ const companyRouter = express.Router();
 companyRouter.use(mustBeUser);
 
 companyRouter.get('/', (req, res ) => {
-    res.send({ success: true, data: { user: 'hvhoan' }});
+    res.render('pages/private/company');
 });
 
 module.exports = { companyRouter }

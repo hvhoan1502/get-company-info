@@ -1,5 +1,5 @@
 const { MyError } = require('../helpers/MyError');
-const Constants = require(appRoot + '/plugins/Constants');
+const Constants = require('../../plugins/Constants');
 const { hash, compare } = require('bcrypt');
 const { sign } = require('../helpers/jwt');
 
