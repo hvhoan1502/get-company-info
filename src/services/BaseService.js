@@ -2,7 +2,7 @@ const request = require('request');
 
 class BaseService {
     // Get all link company by page site
-    function getAllLink(uri) {
+    getAllLink(uri) {
         return new Promise((resolve, reject) => {
             request(uri, (err, res, body) => {
                 if (err) return reject(err);
@@ -12,10 +12,12 @@ class BaseService {
     }
 
     // Get detail company information by link
-    function getDetailCompany(uri) {
+    getDetailCompany(uri) {
         return new Promise((resolve, reject) => {
-            if (err) return reject(err);
-            resolve(body);
+            request(uri, (err, res, body) => {
+                if (err) return reject(err);
+                resolve(body);
+            })
         });
     }
 }

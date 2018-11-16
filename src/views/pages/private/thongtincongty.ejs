@@ -1,0 +1,114 @@
+<%- include('../../partials/header.ejs')%>
+
+<div class="container">
+    <hr><br>
+    <form action="/company/thongtincongty" method="POST" id="formAction">
+        <input list="cities" id="city" class="info" placeholder="Choose the city" name="city">
+        <datalist id="cities">
+            <option value="ho-chi-minh">TP.Hồ Chí Minh</option>
+            <option value="ben-tre">Bến Tre</option>
+            <option value="long-an">Long An</option>
+            <option value="dong-nai">Đồng Nai</option>
+        </datalist>
+        <input list="districts" id="district" class="info" placeholder="Choose the district" name="dictrict">
+        <datalist id="districts">
+            <option value="quan-1">Quận 1</option>
+            <option value="quan-2">Quận 2</option>
+            <option value="quan-3">Quận 3</option>
+            <option value="quan-4">Quận 4</option>
+        </datalist>
+        <input type="text" name="startPage" class="page" placeholder="Start page..." name="startPage">
+        <input type="text" name="endPage" class="page" placeholder="End page..." name="endPage">
+        <input type="submit" value="GET" id="submit">
+    </form> <br><hr>
+    <% if(data) { %>
+        <div id="data">
+            <div class="container">
+                    <% data.forEach(result => { %>
+                        <div class="row">
+                            <div>
+                                <span>Tên công ty: <%= result.name %> </span><br>
+                                <span>Địa chỉ: <%= result.address %> </span><br>
+                                <span>Người đại diện: <%= result.master %></span> <br>
+                                <span>Số điện thoại: <%= result.phoneNumber %></span> <br>
+                                <span>Ngành Nghề: <%= result.field%></span>
+                            </div>
+                        </div>
+                        <br> <br>
+                    <% }); %>
+            </div>
+        </div>
+    <% } else { %>
+        <div class="no-data">
+            <img src="http://chittagongit.com/images/no-data-icon/no-data-icon-20.jpg" alt="">
+            <h4>No data company</h4>
+        </div>
+    <% } %>
+</div>
+<script src="/reload/reload.js"></script> 
+
+<%- include('../../partials/footer.ejs')%>
+
+<style>
+    datalist { 
+        display: none;
+    }
+
+    #fh5co-blog {
+        display: none;
+    }
+
+    #fh5co-started {
+        display: none;
+        
+    }
+
+    #formAction {
+        margin-left: 10%;
+    }
+
+    #formAction input[type=text] {
+        margin-left: 20px;
+    }
+
+    .no-data h4 {
+        color: red;
+        margin-left: 40%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-style: italic;
+        font-size: 15px;
+    }
+
+    .no-data img {
+        width: 60px;
+        height: 60px;
+        margin-left: 44%;
+        margin-top: 7px;
+    }
+
+    .info {
+        border: 1px gray solid;
+        background-position: 5px 5px;
+        border-radius: 4px;
+        width: 250px;
+    }
+
+    .page {
+        border: 1px gray solid;
+        background-position: 5px 5px;
+        border-radius: 4px;
+        width: 120px;
+    }
+
+    #submit {
+        width: 80px;
+        border: 2px gray solid;
+        background: #317ae1;
+        color: white;
+        border-radius: 5px;
+    }
+
+
+</style>
+
