@@ -1,3 +1,7 @@
+<%
+	const user = locals.user;
+%>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -56,22 +60,29 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">PANDA<span></span></a></div>
+						<div id="fh5co-logo"><a href="/">PANDA<span></span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="/">Home</a></li>
+							<% if (user) { %>
+								<li><a href="/company">Company</a></li>
+								<li><a href="/memory">Memory</a></li>
+							<% } %>
 							<li class="has-dropdown">
 								<a href="#">Blog</a>
 								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
+									<li><a href="/music">My Music</a></li>
+									<li><a href="#">My Video</a></li>
 								</ul>
 							</li>
 							<li><a href="#">About</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+							<% if (user) { %>
+								<li class="btn-cta"><a href="/logout"><span>Hi, <%= user.name %></span></a></li>	
+							<% } else { %>
+								<li class="btn-cta"><a href="/login"><span>Login</span></a></li>
+							<% } %>
+							
 						</ul>
 					</div>
 				</div>

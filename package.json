@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ignore-path .gitignore .",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js -e js,ejs"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +18,11 @@
   "dependencies": {
     "bcrypt": "^3.0.2",
     "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.3.0",
-    "reload": "^2.3.1"
+    "reload": "^2.3.1",
+    "request": "^2.88.0"
   }
 }
