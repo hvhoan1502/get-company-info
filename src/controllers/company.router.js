@@ -1,5 +1,7 @@
 const express = require('express');
 
+const dataList = require('../../plugins/Info.json');
+
 const { mustBeUser } = require('./user.middleware');
 
 const companyRouter = express.Router();
@@ -30,7 +32,7 @@ companyRouter.use((req, res, next) => {
         const data = {
             message: "Failled Action. Check enter information."
         }
-        return res.render('pages/private/thongtincongty', { data, header: {} });
+        return res.render('pages/private/thongtincongty', { data, header: {}, dataList });
     }
     next();
 });
@@ -41,7 +43,12 @@ companyRouter.get('/', (req, res ) => {
 
 // Get thongtincongty.com information
 companyRouter.get('/thongtincongty', (req, res) => {
-    res.render('pages/private/thongtincongty', { data: null, header: {} });
+    const dataInfo = dataList;
+    let city = 'tinh-dong-nai';
+    const  a = JSON.stringify(dataInfo);
+    const b = JSON.parse(a);
+    city = b.city.find(item => item.alias === city);
+    res.render('pages/private/thongtincongty', { data: null, header: {}, dataInfo });
 });
 
 companyRouter.post('/thongtincongty', (req, res) => {
@@ -61,7 +68,7 @@ companyRouter.post('/thongtincongty', (req, res) => {
             field: 'Hi4'
         }
     ];
-    res.render('pages/private/thongtincongty', { header, data });
+    res.render('pages/private/thongtincongty', { header, data, dataList });
 });
 
 module.exports = { companyRouter }

@@ -1,21 +1,36 @@
 <%- include('../../partials/header.ejs')%>
 
+<script>
+        function getDistrictsByCity() {
+            let city = document.getElementById('city').value;
+            let dataInfo = <%- JSON.stringify(dataInfo) %>;
+            if (city) {
+                city = dataInfo.city.find(item => item.alias === city);
+            };
+            if (typeof city === 'object') {
+                let line = '';
+                city.district.forEach(item => {
+                    line += `<option value="${item.alias}">${item.name}</option>`;
+                });
+                document.getElementById('districts').innerHTML=line;
+            }
+        }
+    </script>
+
 <div class="container">
     <hr><br>
     <form action="/company/thongtincongty" method="POST" id="formAction">
         <input list="cities" id="city" class="info" placeholder="Choose the city" name="city" value="<%= header.city %>">
         <datalist id="cities">
-            <option value="ho-chi-minh">TP.Hồ Chí Minh</option>
-            <option value="ben-tre">Bến Tre</option>
-            <option value="long-an">Long An</option>
-            <option value="dong-nai">Đồng Nai</option>
+            <% dataInfo.city.forEach(item => { %>
+            <option value="<%= item.alias%>">
+                <%= item.name%>
+            </option>
+            <% }); %>
         </datalist>
-        <input list="districts" id="district" class="info" placeholder="Choose the district" name="district" value="<%= header.district %>">
+        <input list="districts" id="district" class="info" placeholder="Choose the district" name="district" value="<%= header.district %>" onclick="getDistrictsByCity()">
         <datalist id="districts">
-            <option value="quan-1">Quận 1</option>
-            <option value="quan-2">Quận 2</option>
-            <option value="quan-3">Quận 3</option>
-            <option value="quan-4">Quận 4</option>
+            <!-- options get data and render by javascript -->
         </datalist>
         <input type="number" name="startPage" class="page" placeholder="Start page..." name="startPage" value="<%= header.startPage %>">
         <input type="number" name="endPage" class="page" placeholder="End page..." name="endPage" value="<%= header.endPage %>">
@@ -31,10 +46,14 @@
     <div id="data">
         <div class="container panel panel-body panel-default">
             <h3 class="text-center">
-                City: <%= header.city %>,
-                District: <%= header.district %>,
-                Start Page: <%= header.startPage %>,
-                End Page: <%= header.endPage %>
+                City:
+                <%= header.city %>,
+                District:
+                <%= header.district %>,
+                Start Page:
+                <%= header.startPage %>,
+                End Page:
+                <%= header.endPage %>
             </h3>
             <hr>
             <% data.forEach(result => { %>
@@ -66,7 +85,9 @@
 <script src="/reload/reload.js"></script>
 <script>
     setTimeout(() => {
-        document.getElementById('message').style.display = 'none';
+        if ( document.getElementById('message') ) {
+            document.getElementById('message').style.display = 'none';
+        }
     }, 5000);
 </script>
 
@@ -148,6 +169,6 @@
         font-family: 'Times New Roman', Times, serif;
         font-weight: bolder;
         text-transform: uppercase;
-        
+
     }
 </style>
