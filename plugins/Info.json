@@ -1,0 +1,265 @@
+{
+    "city": [
+        {
+            "name": "TP.Hồ Chí Minh",
+            "alias": "thanh-pho-ho-chi-minh",
+            "district": [
+                {
+                    "name": "Quận 1",
+                    "alias": "quan-1"
+                },
+                {
+                    "name": "Quận 2",
+                    "alias": "quan-2"
+                },
+                {
+                    "name": "Quận 3",
+                    "alias": "quan-3"
+                },
+                {
+                    "name": "Quận 4",
+                    "alias": "quan-4"
+                },
+                {
+                    "name": "Quận 5",
+                    "alias": "quan-5"
+                },
+                {
+                    "name": "Quận 6",
+                    "alias": "quan-6"
+                },
+                {
+                    "name": "Quận 7",
+                    "alias": "quan-7"
+                },
+                {
+                    "name": "Quận 8",
+                    "alias": "quan-8"
+                },
+                {
+                    "name": "Quận 9",
+                    "alias": "quan-9"
+                },
+                {
+                    "name": "Quận 10",
+                    "alias": "quan-10"
+                },
+                {
+                    "name": "Quận 11",
+                    "alias": "quan-11"
+                },
+                {
+                    "name": "Quận 12",
+                    "alias": "quan-12"
+                },
+                {
+                    "name": "Quận Gò Vấp",
+                    "alias": "quan-go-vap"
+                },
+                {
+                    "name": "Quận Tân Bình",
+                    "alias": "quan-tan-binh"
+                },
+                {
+                    "name": "Quận Tân Phú",
+                    "alias": "quan-tan-phu"
+                },
+                {
+                    "name": "Quận Bình Thạnh",
+                    "alias": "quan-binh-thanh"
+                },
+                {
+                    "name": "Quận Phú Nhuận",
+                    "alias": "quan-phu-nhuan"
+                },
+                {
+                    "name": "Quận Thủ Đức",
+                    "alias": "quan-thu-duc"
+                },
+                {
+                    "name": "Quận Bình Tân",
+                    "alias": "quan-binh-tan"
+                },
+                {
+                    "name": "Huyện Củ Chi",
+                    "alias": "huyen-cu-chi"
+                },
+                {
+                    "name": "Huyện Hóc Môn",
+                    "alias": "huyen-hoc-mon"
+                },
+                {
+                    "name": "Huyện Bình Chánh",
+                    "alias": "huyen-binh-chanh"
+                },
+                {
+                    "name": "Huyện Nhà Bè",
+                    "alias": "huyen-nha-be"
+                },
+                {
+                    "name": "Huyện Cần Giờ",
+                    "alias": "huyen-can-gio"
+                }
+                
+            ]
+        },
+        {
+            "name": "Tỉnh Đồng Nai",
+            "alias": "tinh-dong-nai",
+            "district":[
+                {
+                    "name": "Thành Phố Biên Hòa",
+                    "alias": "thanh-pho-bien-hoa"
+                },
+                {
+                    "name": "Thị Xã Long Khánh",
+                    "alias": "thi-xa-long-khanh"
+                },
+                {
+                    "name": "Huyện Tân Phú",
+                    "alias": "huyen-tan-phu"
+                },
+                {
+                    "name": "Huyện Định Quán",
+                    "alias": "huyen-dinh-quan"
+                },
+                {
+                    "name": "Huyện Vĩnh Cửu",
+                    "alias": "huyen-vinh-cuu"
+                },
+                {
+                    "name": "Huyện Trảng Bom",
+                    "alias": "huyen-trang-bom"
+                },
+                {
+                    "name": "Huyện Thống Nhất",
+                    "alias": "huyen-thong-nhat"
+                },
+                {
+                    "name": "Huyện Cẩm Mỹ",
+                    "alias": "huyen-cam-my"
+                },
+                {
+                    "name": "Huyện Xuân Lộc",
+                    "alias": "huyen-xuan-loc"
+                },
+                {
+                    "name": "Huyện Long Thành",
+                    "alias": "huyen-long-thanh"
+                },
+                {
+                    "name": "Huyện Nhơn Trạch",
+                    "alias": "huyen-nhon-trach"
+                }
+            ]
+        },
+        {
+            "name": "Tỉnh Bến Tre",
+            "alias": "tinh-ben-tre",
+            "district": [
+                {
+                    "name": "Thành Phố Bến Tre",
+                    "alias": "thanh-pho-ben-tre"
+                },
+                {
+                    "name": "Huyện Châu Thành",
+                    "alias": "huyen-chau-thanh"
+                },
+                {
+                    "name": "Huyện Chợ Lách",
+                    "alias": "huyen-cho-lach"
+                },
+                {
+                    "name": "Huyện Mỏ Cày Bắc",
+                    "alias": "huyen-mo-cay-bac"
+                },
+                {
+                    "name": "Huyện Mỏ Cày Nam",
+                    "alias": "huyen-mo-cay-nam"
+                },
+                {
+                    "name": "Huyện Giồng Trôm",
+                    "alias": "huyen-giong-trom"
+                },
+                {
+                    "name": "Huyện Bình Đại",
+                    "alias": "huyen-binh-dai"
+                },
+                {
+                    "name": "Huyện Ba Tri",
+                    "alias": "huyen-ba-tri"
+                },
+                {
+                    "name": "Huyện Thạnh Phú",
+                    "alias": "huyen-thanh-phu"
+                }
+            ]
+        },
+        {
+            "name": "Tỉnh Long An",
+            "alias": "tinh-long-an",
+            "district": [
+                {
+                    "name": "Thành Phố Tân An",
+                    "alias": "thanh-pho-tan-an"
+                },
+                {
+                    "name": "Huyện Tân Hưng",
+                    "alias": "huyen-tan-hung"
+                },
+                {
+                    "name": "Huyện Vĩnh Hưng",
+                    "alias": "huyen-vinh-hung"
+                },
+                {
+                    "name": "Huyện Mộc Hóa",
+                    "alias": "huyen-moc-hoa"
+                },
+                {
+                    "name": "Huyện Tân Thạnh",
+                    "alias": "huyen-tan-thanh"
+                },
+                {
+                    "name": "Huyện Thạnh Hóa",
+                    "alias": "huyen-thanh-hoa"
+                },
+                {
+                    "name": "Huyện Đức Huệ",
+                    "alias": "huyen-duc-hue"
+                },
+                {
+                    "name": "Huyện Đức Hòa",
+                    "alias": "huyen-duc-hoa"
+                },
+                {
+                    "name": "Huyện Bến Lức",
+                    "alias": "huyen-ben-luc"
+                },
+                {
+                    "name": "Huyện Thủ Thừa",
+                    "alias": "huyen-thu-thua"
+                },
+                {
+                    "name": "Huyện Châu Thành",
+                    "alias": "huyen-chau-thanh"
+                },
+                {
+                    "name": "Huyện Tân Trụ",
+                    "alias": "huyen-tan-tru"
+                },
+                {
+                    "name": "Huyện Cần Đước",
+                    "alias": "huyen-can-duoc"
+                },
+                {
+                    "name": "Huyện Cần Giuộc",
+                    "alias": "huyen-can-giuoc"
+                },
+                {
+                    "name": "Thị Xã Kiến Tường",
+                    "alias": "thi-xa-kien-tuong"
+                }
+            ]
+        }
+    ]
+}
