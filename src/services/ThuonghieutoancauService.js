@@ -30,7 +30,7 @@ class ThuongHieuToanCauService extends BaseService {
                     // Date Allow active
                     const firstIndexDate = data.indexOf('lập:');
                     let dateAllow = data.substring(firstIndexDate + 14, firstIndexDate + 24);
-                    if (dateAllow.include('/')) {
+                    if (dateAllow.includes('/')) {
                         dateAllow = null;
                     }
 
@@ -65,7 +65,7 @@ class ThuongHieuToanCauService extends BaseService {
                     }
                 }
             } catch(err) {
-                console.log('Bị lỗi.');
+                console.log(err);
             }
         }
         return results;

@@ -2,6 +2,7 @@ const express = require('express');
 
 const { ThongTinCongTyService } = require('../services/ThongtincongtyService');
 const { ThuongHieuToanCauService } = require('../services/ThuonghieutoancauService');
+const { BaoThuongMaiService } = require('../services/BaoThuongMaiService');
 
 const dataList = require('../../plugins/Info.json');
 
@@ -98,9 +99,12 @@ companyRouter.post('/baothuongmai', (req, res) => {
         ({ endPage: body.endPage } || {}) 
     );
 
-    ThuongHieuToanCauService.getDataDetail( body.city, body.startPage, body.endPage )
+    BaoThuongMaiService.getDataDetail( body.city, body.startPage, body.endPage )
     .then(data => res.render('pages/private/baothuongmai', { header, data }))
-    .catch(err => res.send(err));
+    .catch(err => {
+        console.log(err);
+        res.send(err);
+    });
 });
 
 module.exports = { companyRouter }
