@@ -68,6 +68,9 @@ class ThongTinCongTyService extends BaseService {
                         let master;
                         if (firstIndexMaster > 0 && lastIndexMaster > 0) {
                             master = data.substring(firstIndexMaster, lastIndexMaster);
+                            if (master.includes('/')) {
+                                master = null;
+                            }
                         }
                         //sdt link
                         const firstIndexPhone = data.indexOf('Điện thoại: <img src=');
