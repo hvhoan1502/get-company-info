@@ -79,10 +79,27 @@ companyRouter.post('/thuonghieutoancau', (req, res) => {
         ({ startPage: body.startPage } || {}),
         ({ endPage: body.endPage } || {}) 
     );
-    // res.render('pages/private/thuonghieutoancau', { data: null, header });
 
     ThuongHieuToanCauService.getDataDetail( body.city, body.startPage, body.endPage )
     .then(data => res.render('pages/private/thuonghieutoancau', { header, data }))
+    .catch(err => res.send(err));
+});
+
+// Get baothuongmai.com information
+companyRouter.get('/baothuongmai', (req, res) => {
+    res.render('pages/private/baothuongmai', { data: null, header: {}});
+});
+
+companyRouter.post('/baothuongmai', (req, res) => {
+    const body = req.body;
+    const header = Object.assign({},
+        ({ city: body.city } || {}),
+        ({ startPage: body.startPage } || {}),
+        ({ endPage: body.endPage } || {}) 
+    );
+
+    ThuongHieuToanCauService.getDataDetail( body.city, body.startPage, body.endPage )
+    .then(data => res.render('pages/private/baothuongmai', { header, data }))
     .catch(err => res.send(err));
 });
 
