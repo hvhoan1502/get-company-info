@@ -5,7 +5,9 @@ const Login = {
 }
 
 const UrlSite = {
-    ThongTinCongTy: 'http://www.thongtincongty.com/'
+    ThongTinCongTy: 'http://www.thongtincongty.com/',
+    ThuongHieuToanCau: 'http://thuonghieutoancau.vn/index.php?lang=vi&mod=search&op=company&codetax=&keys=&business=0&location=',
+    BaoThuongMai: 'http://doanhnghiep.baothuongmai.com.vn'
 }
 
 module.exports = {

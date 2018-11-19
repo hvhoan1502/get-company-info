@@ -1,6 +1,9 @@
 const express = require('express');
 
 const { ThongTinCongTyService } = require('../services/ThongtincongtyService');
+const { ThuongHieuToanCauService } = require('../services/ThuonghieutoancauService');
+const { BaoThuongMaiService } = require('../services/BaoThuongMaiService');
+
 const dataList = require('../../plugins/Info.json');
 
 const { mustBeUser } = require('./user.middleware');
@@ -34,7 +37,7 @@ companyRouter.use((req, res, next) => {
         const data = {
             message: "Failled Action. Check enter information."
         }
-        return res.render('pages/private/thongtincongty', { data, header: {}, dataInfo });
+        return res.render('pages/private' + req.path, { data, header: {}, dataInfo });
     }
     next();
 });
@@ -62,6 +65,46 @@ companyRouter.post('/thongtincongty', (req, res) => {
     ThongTinCongTyService.getDataDetail( body.city, body.district, body.startPage, body.endPage )
     .then(data => res.render('pages/private/thongtincongty', { header, data, dataInfo }))
     .catch(err => res.send(err));
+});
+
+
+// Get thongtincongty.com information
+companyRouter.get('/thuonghieutoancau', (req, res) => {
+    res.render('pages/private/thuonghieutoancau', { data: null, header: {}});
+});
+
+companyRouter.post('/thuonghieutoancau', (req, res) => {
+    const body = req.body;
+    const header = Object.assign({},
+        ({ city: body.city } || {}),
+        ({ startPage: body.startPage } || {}),
+        ({ endPage: body.endPage } || {}) 
+    );
+
+    ThuongHieuToanCauService.getDataDetail( body.city, body.startPage, body.endPage )
+    .then(data => res.render('pages/private/thuonghieutoancau', { header, data }))
+    .catch(err => res.send(err));
+});
+
+// Get baothuongmai.com information
+companyRouter.get('/baothuongmai', (req, res) => {
+    res.render('pages/private/baothuongmai', { data: null, header: {}});
+});
+
+companyRouter.post('/baothuongmai', (req, res) => {
+    const body = req.body;
+    const header = Object.assign({},
+        ({ city: body.city } || {}),
+        ({ startPage: body.startPage } || {}),
+        ({ endPage: body.endPage } || {}) 
+    );
+
+    BaoThuongMaiService.getDataDetail( body.city, body.startPage, body.endPage )
+    .then(data => res.render('pages/private/baothuongmai', { header, data }))
+    .catch(err => {
+        console.log(err);
+        res.send(err);
+    });
 });
 
 module.exports = { companyRouter }

@@ -1,0 +1,156 @@
+<%- include('../../partials/header.ejs', { title: 'Site: BAOTHUONGMAI.COM' })%>
+
+<div class="container">
+    <hr><br>
+    <form action="/company/baothuongmai" method="POST" id="formAction">
+        <input list="cities" id="city" class="info" placeholder="Choose the city" name="city" value="<%= header.city %>">
+        <datalist id="cities">
+                <option value="thanh-pho-ho-chi-minh">TP.Hồ Chí Minh</option>
+                <option value="tinh-ben-tre">Bến Tre</option>
+                <option value="tinh-long-an">Long An</option>
+                <option value="tinh-dong-nai">Đồng Nai</option>
+        </datalist>
+        <input type="number" name="startPage" class="page" placeholder="Start page..." name="startPage" value="<%= header.startPage %>">
+        <input type="number" name="endPage" class="page" placeholder="End page..." name="endPage" value="<%= header.endPage %>">
+        <input type="submit" value="GET" id="submit">
+    </form> <br>
+    <% if (data && data.message) { %>
+    <p id="message" class="text-center">
+        <%= data.message %>
+    </p>
+    <% } %>
+    <hr>
+    <% if(data && !data.message && header) { %>
+    <div id="data">
+        <div class="container panel panel-body panel-default">
+            <h3 class="text-center">
+                City:
+                <%= header.city %>,
+                Start Page:
+                <%= header.startPage %>,
+                End Page:
+                <%= header.endPage %>
+            </h3>
+            <hr>
+            <% for(item in data) { %>
+                <h3 style="color: #317ae1"><%= item %></h3>
+                <% data[item].forEach(result => { %>
+                    <div class="row">
+                        <div class="companyDetail">
+                            <span>Tên công ty:
+                                <%= result.name %> </span><br>
+                            <span>Địa Chỉ:
+                                <%= result.address %> </span><br>
+                            <span>Người Đại Diện:
+                                <%= result.master %></span> <br>
+                            <span>Số điện thoại:
+                               <%= result.phoneNumber %> </span> <br>
+                            <span>Ngày cấp giấy phép:
+                                <%= result.dateAllow %></span> <br>
+                            <span>Ngành chính:
+                                <%= result.field %>
+                            </span>
+                        </div>
+                    </div>
+                    <br> <br>
+                <% }); %>
+            <% } %>
+        </div>
+    </div>
+    <% } else { %>
+    <div class="no-data">
+        <img src="/public/no-data-1.jpg" alt="">
+        <h4 class="text-center">No data company</h4>
+    </div>
+    <% } %>
+</div>
+<script src="/reload/reload.js"></script>
+<script>
+    setTimeout(() => {
+        if ( document.getElementById('message') ) {
+            document.getElementById('message').style.display = 'none';
+        }
+    }, 5000);
+</script>
+
+<%- include('../../partials/footer.ejs')%>
+
+<style>
+    datalist {
+        display: none;
+    }
+
+    #fh5co-blog {
+        display: none;
+    }
+
+    #fh5co-started {
+        display: none;
+
+    }
+
+    #formAction {
+        margin-left: 25%;
+    }
+
+    #formAction input[type=text] {
+        margin-left: 20px;
+    }
+
+    .no-data h4 {
+        color: red;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-style: italic;
+        font-size: 15px;
+    }
+
+    .no-data img {
+        width: 60px;
+        height: 60px;
+        margin-left: 47%;
+        margin-top: 7px;
+    }
+
+    .info {
+        border: 1px gray solid;
+        background-position: 5px 5px;
+        border-radius: 4px;
+        width: 250px;
+    }
+
+    .page {
+        border: 1px gray solid;
+        background-position: 5px 5px;
+        border-radius: 4px;
+        width: 120px;
+    }
+
+    #submit {
+        width: 80px;
+        border: 2px gray solid;
+        background: #317ae1;
+        color: white;
+        border-radius: 5px;
+    }
+
+    #message {
+        color: red;
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+
+    .companyDetail {
+        margin-left: 8%;
+    }
+
+    #data h3 {
+        color: #317ae1;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        text-transform: uppercase;
+
+    }
+</style>
