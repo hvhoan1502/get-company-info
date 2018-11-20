@@ -63,7 +63,7 @@ class DiaChiDoanhNghiepService extends BaseService {
                     const lastIndexMaster = body.indexOf('</td>');
                     const master = body.substring(firstIndexMaster + 3, lastIndexMaster);
 
-                    if (phoneNumber.length < 20) {
+                    if (phoneNumber.length < 30 && phoneNumber.length > 5) {
                         results.push({
                             name,
                             address,
