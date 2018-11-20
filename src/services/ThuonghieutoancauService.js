@@ -78,9 +78,8 @@ class ThuongHieuToanCauService extends BaseService {
             return 4;
         } else if (name == 'tinh-dong-nai') {
             return 29;
-        } else {
-            return 10;
         }
+        return 10;
     }
 
     static splitItemLink(context) {

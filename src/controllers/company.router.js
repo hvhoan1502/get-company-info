@@ -3,6 +3,7 @@ const express = require('express');
 const { ThongTinCongTyService } = require('../services/ThongtincongtyService');
 const { ThuongHieuToanCauService } = require('../services/ThuonghieutoancauService');
 const { BaoThuongMaiService } = require('../services/BaoThuongMaiService');
+const { DiaChiDoanhNghiepService } = require('../services/DiaChiDoanhNghiepService')
 
 const dataList = require('../../plugins/Info.json');
 
@@ -105,6 +106,25 @@ companyRouter.post('/baothuongmai', (req, res) => {
         console.log(err);
         res.send(err);
     });
+});
+
+
+
+companyRouter.get('/diachidoanhnghiep', (req, res) => {
+    res.render('pages/private/diachidoanhnghiep', { data: null, header: {}});
+});
+
+companyRouter.post('/diachidoanhnghiep', (req, res) => {
+    const body = req.body;
+    const header = Object.assign({},
+        ({ city: body.city } || {}),
+        ({ startPage: body.startPage } || {}),
+        ({ endPage: body.endPage } || {}) 
+    );
+
+    DiaChiDoanhNghiepService.getDataDetail( body.city, body.startPage, body.endPage )
+    .then(data => res.render('pages/private/diachidoanhnghiep', { header, data }))
+    .catch(err => res.send(err));
 });
 
 module.exports = { companyRouter }
