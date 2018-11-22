@@ -143,7 +143,7 @@ companyRouter.post('/vinabiz', (req, res) => {
         ({ endPage: body.endPage } || {}) 
     );
     VinabizService.getDataDetail( body.city, body.district, body.startPage, body.endPage )
-    .then(data => res.render('pages/private/vinabiz', { header, data : null, dataInfo }))
+    .then(data => res.render('pages/private/vinabiz', { header, data, dataInfo }))
     .catch(err => res.send(err));
 });
 

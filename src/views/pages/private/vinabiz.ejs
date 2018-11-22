@@ -1,7 +1,7 @@
 <%- include('../../partials/header.ejs', { title: 'Site: THONGTYCONGTY.COM' })%>
 
-<!-- <script>
-        function getDistrictsByCity() {
+<script>
+    function getDistrictsByCity() {
             let city = document.getElementById('city').value;
             let dataInfo = <%- JSON.stringify(dataInfo) %>;
             if (city) {
@@ -15,7 +15,7 @@
                 document.getElementById('districts').innerHTML=line;
             }
         }
-</script> -->
+</script>
 
 <div class="container">
     <hr><br>
@@ -28,7 +28,8 @@
             </option>
             <% }); %>
         </datalist>
-        <input list="districts" id="district" class="info" placeholder="Choose the district" name="district" value="<%= header.district %>" onclick="getDistrictsByCity()">
+        <input list="districts" id="district" class="info" placeholder="Choose the district" name="district" value="<%= header.district %>"
+            onclick="getDistrictsByCity()">
         <datalist id="districts">
             <!-- options get data and render by javascript -->
         </datalist>
@@ -61,13 +62,31 @@
                 <div class="companyDetail">
                     <span>Tên công ty:
                         <%= result.name %> </span><br>
-                    <span>
+                    <span>Địa chỉ:
                         <%= result.address %> </span><br>
-                    <span>
-                        <%= result.master %></span> <br>
+                    <span> Người đại diện:
+                        <%- result.master %>
+                    </span><br>
                     <span>Số điện thoại:
-                        <img src= '<%= result.phoneNumber %>' alt=""> <br>
-                    <span>Ngày cấp giấy phép:
+                        <%= result.phoneNumber %></span> <br>
+                    <% if (result.masterPhone) { %>
+                        <span>Giám đốc:
+                            <%- result.master %></span> <br>
+                        <span>Số điện thoại giám đốc:
+                            <%= result.masterPhone %>
+                        </span> <br>
+                    <%} %>
+
+                    <% if (result.accountant || result.accountantPhone) { %>
+                        <span> Kế toán:
+                            <%- result.accountant %>
+                        </span> <br>
+                        <span> Số điện thoại kế toán:
+                            <%= result.accountantPhone %>
+                        </span> <br>
+                    <% } %>
+                    
+                    <span>Ngày cấp hoạt động:
                         <%= result.dateAllow %></span>
                 </div>
             </div>
@@ -85,7 +104,7 @@
 <script src="/reload/reload.js"></script>
 <script>
     setTimeout(() => {
-        if ( document.getElementById('message') ) {
+        if (document.getElementById('message')) {
             document.getElementById('message').style.display = 'none';
         }
     }, 5000);
