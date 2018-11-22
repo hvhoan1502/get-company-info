@@ -2,102 +2,127 @@
     "city": [
         {
             "name": "TP.Hồ Chí Minh",
+            "idvina": "",
             "alias": "thanh-pho-ho-chi-minh",
             "district": [
                 {
                     "name": "Quận 1",
+                    "idvina": "",
                     "alias": "quan-1"
                 },
                 {
                     "name": "Quận 2",
+                    "idvina": "",
                     "alias": "quan-2"
                 },
                 {
                     "name": "Quận 3",
+                    "idvina": "",
                     "alias": "quan-3"
                 },
                 {
                     "name": "Quận 4",
+                    "idvina": "",
                     "alias": "quan-4"
                 },
                 {
                     "name": "Quận 5",
+                    "idvina": "",
                     "alias": "quan-5"
                 },
                 {
                     "name": "Quận 6",
+                    "idvina": "",
                     "alias": "quan-6"
                 },
                 {
                     "name": "Quận 7",
+                    "idvina": "",
                     "alias": "quan-7"
                 },
                 {
                     "name": "Quận 8",
+                    "idvina": "",
                     "alias": "quan-8"
                 },
                 {
                     "name": "Quận 9",
+                    "idvina": "",
                     "alias": "quan-9"
                 },
                 {
                     "name": "Quận 10",
+                    "idvina": "",
                     "alias": "quan-10"
                 },
                 {
                     "name": "Quận 11",
+                    "idvina": "",
                     "alias": "quan-11"
                 },
                 {
                     "name": "Quận 12",
+                    "idvina": "",
                     "alias": "quan-12"
                 },
                 {
                     "name": "Quận Gò Vấp",
+                    "idvina": "",
                     "alias": "quan-go-vap"
                 },
                 {
                     "name": "Quận Tân Bình",
+                    "idvina": "",
                     "alias": "quan-tan-binh"
                 },
                 {
                     "name": "Quận Tân Phú",
+                    "idvina": "",
                     "alias": "quan-tan-phu"
                 },
                 {
                     "name": "Quận Bình Thạnh",
+                    "idvina": "",
                     "alias": "quan-binh-thanh"
                 },
                 {
                     "name": "Quận Phú Nhuận",
+                    "idvina": "",
                     "alias": "quan-phu-nhuan"
                 },
                 {
                     "name": "Quận Thủ Đức",
+                    "idvina": "",
                     "alias": "quan-thu-duc"
                 },
                 {
                     "name": "Quận Bình Tân",
+                    "idvina": "",
                     "alias": "quan-binh-tan"
                 },
                 {
                     "name": "Huyện Củ Chi",
+                    "idvina": "",
                     "alias": "huyen-cu-chi"
                 },
                 {
                     "name": "Huyện Hóc Môn",
+                    "idvina": "",
                     "alias": "huyen-hoc-mon"
                 },
                 {
                     "name": "Huyện Bình Chánh",
+                    "idvina": "",
                     "alias": "huyen-binh-chanh"
                 },
                 {
                     "name": "Huyện Nhà Bè",
+                    "idvina": "",
                     "alias": "huyen-nha-be"
                 },
                 {
                     "name": "Huyện Cần Giờ",
+                    "idvina": "",
                     "alias": "huyen-can-gio"
                 }
                 
@@ -105,158 +130,196 @@
         },
         {
             "name": "Tỉnh Đồng Nai",
+            "idvina": "",
             "alias": "tinh-dong-nai",
             "district":[
                 {
                     "name": "Thành Phố Biên Hòa",
+                    "idvina": "",
                     "alias": "thanh-pho-bien-hoa"
                 },
                 {
                     "name": "Thị Xã Long Khánh",
+                    "idvina": "",
                     "alias": "thi-xa-long-khanh"
                 },
                 {
                     "name": "Huyện Tân Phú",
+                    "idvina": "",
                     "alias": "huyen-tan-phu"
                 },
                 {
                     "name": "Huyện Định Quán",
+                    "idvina": "",
                     "alias": "huyen-dinh-quan"
                 },
                 {
                     "name": "Huyện Vĩnh Cửu",
+                    "idvina": "",
                     "alias": "huyen-vinh-cuu"
                 },
                 {
                     "name": "Huyện Trảng Bom",
+                    "idvina": "",
                     "alias": "huyen-trang-bom"
                 },
                 {
                     "name": "Huyện Thống Nhất",
+                    "idvina": "",
                     "alias": "huyen-thong-nhat"
                 },
                 {
                     "name": "Huyện Cẩm Mỹ",
+                    "idvina": "",
                     "alias": "huyen-cam-my"
                 },
                 {
                     "name": "Huyện Xuân Lộc",
+                    "idvina": "",
                     "alias": "huyen-xuan-loc"
                 },
                 {
                     "name": "Huyện Long Thành",
+                    "idvina": "",
                     "alias": "huyen-long-thanh"
                 },
                 {
                     "name": "Huyện Nhơn Trạch",
+                    "idvina": "",
                     "alias": "huyen-nhon-trach"
                 }
             ]
         },
         {
             "name": "Tỉnh Bến Tre",
+            "idvina": "",
             "alias": "tinh-ben-tre",
             "district": [
                 {
                     "name": "Thành Phố Bến Tre",
+                    "idvina": "",
                     "alias": "thanh-pho-ben-tre"
                 },
                 {
                     "name": "Huyện Châu Thành",
+                    "idvina": "",
                     "alias": "huyen-chau-thanh"
                 },
                 {
                     "name": "Huyện Chợ Lách",
+                    "idvina": "",
                     "alias": "huyen-cho-lach"
                 },
                 {
                     "name": "Huyện Mỏ Cày Bắc",
+                    "idvina": "",
                     "alias": "huyen-mo-cay-bac"
                 },
                 {
                     "name": "Huyện Mỏ Cày Nam",
+                    "idvina": "",
                     "alias": "huyen-mo-cay-nam"
                 },
                 {
                     "name": "Huyện Giồng Trôm",
+                    "idvina": "",
                     "alias": "huyen-giong-trom"
                 },
                 {
                     "name": "Huyện Bình Đại",
+                    "idvina": "",
                     "alias": "huyen-binh-dai"
                 },
                 {
                     "name": "Huyện Ba Tri",
+                    "idvina": "",
                     "alias": "huyen-ba-tri"
                 },
                 {
                     "name": "Huyện Thạnh Phú",
+                    "idvina": "",
                     "alias": "huyen-thanh-phu"
                 }
             ]
         },
         {
             "name": "Tỉnh Long An",
+            "idvina": "",
             "alias": "tinh-long-an",
             "district": [
                 {
                     "name": "Thành Phố Tân An",
+                    "idvina": "",
                     "alias": "thanh-pho-tan-an"
                 },
                 {
                     "name": "Huyện Tân Hưng",
+                    "idvina": "",
                     "alias": "huyen-tan-hung"
                 },
                 {
                     "name": "Huyện Vĩnh Hưng",
+                    "idvina": "",
                     "alias": "huyen-vinh-hung"
                 },
                 {
                     "name": "Huyện Mộc Hóa",
+                    "idvina": "",
                     "alias": "huyen-moc-hoa"
                 },
                 {
                     "name": "Huyện Tân Thạnh",
+                    "idvina": "",
                     "alias": "huyen-tan-thanh"
                 },
                 {
                     "name": "Huyện Thạnh Hóa",
+                    "idvina": "",
                     "alias": "huyen-thanh-hoa"
                 },
                 {
                     "name": "Huyện Đức Huệ",
+                    "idvina": "",
                     "alias": "huyen-duc-hue"
                 },
                 {
                     "name": "Huyện Đức Hòa",
+                    "idvina": "",
                     "alias": "huyen-duc-hoa"
                 },
                 {
                     "name": "Huyện Bến Lức",
+                    "idvina": "",
                     "alias": "huyen-ben-luc"
                 },
                 {
                     "name": "Huyện Thủ Thừa",
+                    "idvina": "",
                     "alias": "huyen-thu-thua"
                 },
                 {
                     "name": "Huyện Châu Thành",
+                    "idvina": "",
                     "alias": "huyen-chau-thanh"
                 },
                 {
                     "name": "Huyện Tân Trụ",
+                    "idvina": "",
                     "alias": "huyen-tan-tru"
                 },
                 {
                     "name": "Huyện Cần Đước",
+                    "idvina": "",
                     "alias": "huyen-can-duoc"
                 },
                 {
                     "name": "Huyện Cần Giuộc",
+                    "idvina": "",
                     "alias": "huyen-can-giuoc"
                 },
                 {
                     "name": "Thị Xã Kiến Tường",
+                    "idvina": "",
                     "alias": "thi-xa-kien-tuong"
                 }
             ]

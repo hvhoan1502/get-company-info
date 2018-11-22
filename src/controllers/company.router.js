@@ -3,7 +3,8 @@ const express = require('express');
 const { ThongTinCongTyService } = require('../services/ThongtincongtyService');
 const { ThuongHieuToanCauService } = require('../services/ThuonghieutoancauService');
 const { BaoThuongMaiService } = require('../services/BaoThuongMaiService');
-const { DiaChiDoanhNghiepService } = require('../services/DiaChiDoanhNghiepService')
+const { DiaChiDoanhNghiepService } = require('../services/DiaChiDoanhNghiepService');
+const { VinabizService } = require('../services/VinabizService');
 
 const dataList = require('../../plugins/Info.json');
 
@@ -124,6 +125,25 @@ companyRouter.post('/diachidoanhnghiep', (req, res) => {
 
     DiaChiDoanhNghiepService.getDataDetail( body.city, body.startPage, body.endPage )
     .then(data => res.render('pages/private/diachidoanhnghiep', { header, data }))
+    .catch(err => res.send(err));
+});
+
+companyRouter.get('/vinabiz', (req, res) => {
+    const dataInfo = dataList;
+    res.render('pages/private/vinabiz', { data: null, header: {}, dataInfo});
+});
+
+companyRouter.post('/vinabiz', (req, res) => {
+    const dataInfo = dataList;
+    const body = req.body;
+    const header = Object.assign({},
+        ({ city: body.city } || {}),
+        ({ district : body.district} || {}),
+        ({ startPage: body.startPage } || {}),
+        ({ endPage: body.endPage } || {}) 
+    );
+    VinabizService.getDataDetail( body.city, body.district, body.startPage, body.endPage )
+    .then(data => res.render('pages/private/vinabiz', { header, data : null, dataInfo }))
     .catch(err => res.send(err));
 });
 
