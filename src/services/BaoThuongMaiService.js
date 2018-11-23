@@ -50,7 +50,7 @@ class BaoThuongMaiService extends BaseService {
                 let firstKeyIndex;
                 let lastKeyIndex;
                 if (city === 'TP-Ho-Chi-Minh') {
-                    firstKeyIndex = data.indexOf('Quận');
+                    firstKeyIndex = data.indexOf(', Quận');
                     lastKeyIndex = data.indexOf(', TP Hồ Chí Minh');
                     if(firstKeyIndex === -1 || firstKeyIndex > lastKeyIndex) {
                         firstKeyIndex = data.indexOf(', Huyện');

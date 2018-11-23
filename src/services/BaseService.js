@@ -9,9 +9,18 @@ class BaseService {
     }
 
     // Get all link company by page site
-    static getAllLink(uri) {
+    static getAllLink(uri, headers) {
+        let req = {
+            uri,
+            method: 'GET'
+        }
+
+        if (headers) {
+            req.headers = headers;
+        }
+
         return new Promise((resolve, reject) => {
-            request(uri, (err, res, body) => {
+            request(req, (err, res, body) => {
                 if (err) return reject(err);
                 resolve(body);
             });
@@ -19,9 +28,19 @@ class BaseService {
     }
 
     // Get detail company information by link
-    static getDetailCompany(uri) {
+    static getDetailCompany(uri, headers) {
+
+        let req = {
+            uri,
+            method: 'GET'
+        }
+
+        if (headers) {
+            req.headers = headers;
+        }
+
         return new Promise((resolve, reject) => {
-            request(uri, (err, res, body) => {
+            request(req, (err, res, body) => {
                 if (err) return reject(err);
                 resolve(body);
             });

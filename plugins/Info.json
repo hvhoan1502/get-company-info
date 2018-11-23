@@ -2,102 +2,127 @@
     "city": [
         {
             "name": "TP.Hồ Chí Minh",
+            "idvina": "370030003100",
             "alias": "thanh-pho-ho-chi-minh",
             "district": [
                 {
                     "name": "Quận 1",
+                    "idvina": "37003000310030003100",
                     "alias": "quan-1"
                 },
                 {
                     "name": "Quận 2",
+                    "idvina": "37003000310030003300",
                     "alias": "quan-2"
                 },
                 {
                     "name": "Quận 3",
+                    "idvina": "37003000310030003500",
                     "alias": "quan-3"
                 },
                 {
                     "name": "Quận 4",
+                    "idvina": "37003000310030003700",
                     "alias": "quan-4"
                 },
                 {
                     "name": "Quận 5",
+                    "idvina": "37003000310030003900",
                     "alias": "quan-5"
                 },
                 {
                     "name": "Quận 6",
+                    "idvina": "37003000310031003100",
                     "alias": "quan-6"
                 },
                 {
                     "name": "Quận 7",
+                    "idvina": "37003000310031003300",
                     "alias": "quan-7"
                 },
                 {
                     "name": "Quận 8",
+                    "idvina": "37003000310031003500",
                     "alias": "quan-8"
                 },
                 {
                     "name": "Quận 9",
+                    "idvina": "37003000310031003700",
                     "alias": "quan-9"
                 },
                 {
                     "name": "Quận 10",
+                    "idvina": "37003000310031003900",
                     "alias": "quan-10"
                 },
                 {
                     "name": "Quận 11",
+                    "idvina": "37003000310032003100",
                     "alias": "quan-11"
                 },
                 {
                     "name": "Quận 12",
+                    "idvina": "37003000310032003300",
                     "alias": "quan-12"
                 },
                 {
                     "name": "Quận Gò Vấp",
+                    "idvina": "37003000310032003500",
                     "alias": "quan-go-vap"
                 },
                 {
                     "name": "Quận Tân Bình",
+                    "idvina": "37003000310032003700",
                     "alias": "quan-tan-binh"
                 },
                 {
                     "name": "Quận Tân Phú",
+                    "idvina": "37003000310032003800",
                     "alias": "quan-tan-phu"
                 },
                 {
                     "name": "Quận Bình Thạnh",
+                    "idvina": "37003000310032003900",
                     "alias": "quan-binh-thanh"
                 },
                 {
                     "name": "Quận Phú Nhuận",
+                    "idvina": "37003000310033003100",
                     "alias": "quan-phu-nhuan"
                 },
                 {
                     "name": "Quận Thủ Đức",
+                    "idvina": "37003000310033003300",
                     "alias": "quan-thu-duc"
                 },
                 {
                     "name": "Quận Bình Tân",
+                    "idvina": "37003000310033003400",
                     "alias": "quan-binh-tan"
                 },
                 {
                     "name": "Huyện Củ Chi",
+                    "idvina": "37003000310033003500",
                     "alias": "huyen-cu-chi"
                 },
                 {
                     "name": "Huyện Hóc Môn",
+                    "idvina": "37003000310033003700",
                     "alias": "huyen-hoc-mon"
                 },
                 {
                     "name": "Huyện Bình Chánh",
+                    "idvina": "37003000310033003900",
                     "alias": "huyen-binh-chanh"
                 },
                 {
                     "name": "Huyện Nhà Bè",
+                    "idvina": "37003000310034003100",
                     "alias": "huyen-nha-be"
                 },
                 {
                     "name": "Huyện Cần Giờ",
+                    "idvina": "37003000310034003300",
                     "alias": "huyen-can-gio"
                 }
                 
@@ -105,158 +130,196 @@
         },
         {
             "name": "Tỉnh Đồng Nai",
+            "idvina": "370031003300",
             "alias": "tinh-dong-nai",
             "district":[
                 {
                     "name": "Thành Phố Biên Hòa",
+                    "idvina": "37003100330030003100",
                     "alias": "thanh-pho-bien-hoa"
                 },
                 {
                     "name": "Thị Xã Long Khánh",
+                    "idvina": "37003100330030003200",
                     "alias": "thi-xa-long-khanh"
                 },
                 {
                     "name": "Huyện Tân Phú",
+                    "idvina": "37003100330030003300",
                     "alias": "huyen-tan-phu"
                 },
                 {
                     "name": "Huyện Định Quán",
+                    "idvina": "37003100330030003500",
                     "alias": "huyen-dinh-quan"
                 },
                 {
                     "name": "Huyện Vĩnh Cửu",
+                    "idvina": "37003100330030003700",
                     "alias": "huyen-vinh-cuu"
                 },
                 {
                     "name": "Huyện Trảng Bom",
+                    "idvina": "37003100330030003800",
                     "alias": "huyen-trang-bom"
                 },
                 {
                     "name": "Huyện Thống Nhất",
+                    "idvina": "37003100330030003900",
                     "alias": "huyen-thong-nhat"
                 },
                 {
                     "name": "Huyện Cẩm Mỹ",
+                    "idvina": "37003100330031003100",
                     "alias": "huyen-cam-my"
                 },
                 {
                     "name": "Huyện Xuân Lộc",
+                    "idvina": "37003100330031003300",
                     "alias": "huyen-xuan-loc"
                 },
                 {
                     "name": "Huyện Long Thành",
+                    "idvina": "37003100330031003500",
                     "alias": "huyen-long-thanh"
                 },
                 {
                     "name": "Huyện Nhơn Trạch",
+                    "idvina": "37003100330031003700",
                     "alias": "huyen-nhon-trach"
                 }
             ]
         },
         {
             "name": "Tỉnh Bến Tre",
+            "idvina": "380031003100",
             "alias": "tinh-ben-tre",
             "district": [
                 {
                     "name": "Thành Phố Bến Tre",
+                    "idvina": "38003100310030003100",
                     "alias": "thanh-pho-ben-tre"
                 },
                 {
                     "name": "Huyện Châu Thành",
+                    "idvina": "38003100310030003300",
                     "alias": "huyen-chau-thanh"
                 },
                 {
                     "name": "Huyện Chợ Lách",
+                    "idvina": "38003100310030003500",
                     "alias": "huyen-cho-lach"
                 },
                 {
                     "name": "Huyện Mỏ Cày Bắc",
+                    "idvina": "38003100310030003800",
                     "alias": "huyen-mo-cay-bac"
                 },
                 {
                     "name": "Huyện Mỏ Cày Nam",
+                    "idvina": "38003100310030003700",
                     "alias": "huyen-mo-cay-nam"
                 },
                 {
                     "name": "Huyện Giồng Trôm",
+                    "idvina": "38003100310030003900",
                     "alias": "huyen-giong-trom"
                 },
                 {
                     "name": "Huyện Bình Đại",
+                    "idvina": "38003100310031003100",
                     "alias": "huyen-binh-dai"
                 },
                 {
                     "name": "Huyện Ba Tri",
+                    "idvina": "38003100310031003300",
                     "alias": "huyen-ba-tri"
                 },
                 {
                     "name": "Huyện Thạnh Phú",
+                    "idvina": "38003100310031003500",
                     "alias": "huyen-thanh-phu"
                 }
             ]
         },
         {
             "name": "Tỉnh Long An",
+            "idvina": "380030003100",
             "alias": "tinh-long-an",
             "district": [
                 {
                     "name": "Thành Phố Tân An",
+                    "idvina": "38003000310030003100",
                     "alias": "thanh-pho-tan-an"
                 },
                 {
                     "name": "Huyện Tân Hưng",
+                    "idvina": "38003000310030003300",
                     "alias": "huyen-tan-hung"
                 },
                 {
                     "name": "Huyện Vĩnh Hưng",
+                    "idvina": "38003000310030003500",
                     "alias": "huyen-vinh-hung"
                 },
                 {
                     "name": "Huyện Mộc Hóa",
+                    "idvina": "38003000310030003700",
                     "alias": "huyen-moc-hoa"
                 },
                 {
                     "name": "Huyện Tân Thạnh",
+                    "idvina": "38003000310030003900",
                     "alias": "huyen-tan-thanh"
                 },
                 {
                     "name": "Huyện Thạnh Hóa",
+                    "idvina": "38003000310031003100",
                     "alias": "huyen-thanh-hoa"
                 },
                 {
                     "name": "Huyện Đức Huệ",
+                    "idvina": "38003000310031003300",
                     "alias": "huyen-duc-hue"
                 },
                 {
                     "name": "Huyện Đức Hòa",
+                    "idvina": "38003000310031003500",
                     "alias": "huyen-duc-hoa"
                 },
                 {
                     "name": "Huyện Bến Lức",
+                    "idvina": "38003000310031003700",
                     "alias": "huyen-ben-luc"
                 },
                 {
                     "name": "Huyện Thủ Thừa",
+                    "idvina": "38003000310031003900",
                     "alias": "huyen-thu-thua"
                 },
                 {
                     "name": "Huyện Châu Thành",
+                    "idvina": "38003000310032003100",
                     "alias": "huyen-chau-thanh"
                 },
                 {
                     "name": "Huyện Tân Trụ",
+                    "idvina": "38003000310032003300",
                     "alias": "huyen-tan-tru"
                 },
                 {
                     "name": "Huyện Cần Đước",
+                    "idvina": "38003000310032003500",
                     "alias": "huyen-can-duoc"
                 },
                 {
                     "name": "Huyện Cần Giuộc",
+                    "idvina": "38003000310032003700",
                     "alias": "huyen-can-giuoc"
                 },
                 {
                     "name": "Thị Xã Kiến Tường",
+                    "idvina": "38003000310032003900",
                     "alias": "thi-xa-kien-tuong"
                 }
             ]
