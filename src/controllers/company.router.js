@@ -5,8 +5,11 @@ const { ThuongHieuToanCauService } = require('../services/ThuonghieutoancauServi
 const { BaoThuongMaiService } = require('../services/BaoThuongMaiService');
 const { DiaChiDoanhNghiepService } = require('../services/DiaChiDoanhNghiepService');
 const { VinabizService } = require('../services/VinabizService');
+const { DauThauService } = require('../services/DauThauService');
 
 const dataList = require('../../plugins/Info.json');
+
+const dauThauInfo = require('../../plugins/DauThauInfo.json');
 
 const { mustBeUser } = require('./user.middleware');
 
@@ -144,6 +147,34 @@ companyRouter.post('/vinabiz', (req, res) => {
     );
     VinabizService.getDataDetail( body.city, body.district, body.startPage, body.endPage )
     .then(data => res.render('pages/private/vinabiz', { header, data, dataInfo }))
+    .catch(err => res.send(err));
+});
+
+companyRouter.get('/dauthau', (req, res) => {
+    const dataInfo = dauThauInfo;
+    res.render('pages/private/dauthau', { data: null, header: {}, dataInfo });
+});
+
+companyRouter.post('/dauthau', (req, res) => {
+    const dataInfo = dauThauInfo;
+    const body = req.body;
+    const header = Object.assign({},
+        ({ city: body.city } || {}),
+        ({ district : body.district} || {}),
+        ({ startPage: body.startPage } || {}),
+        ({ endPage: body.endPage } || {}) 
+    );
+
+    const results = DauThauService.convertCityAndDistrict(dataInfo, options = { city: body.city, district: body.district});
+    // Check error
+    if (!results) {
+        return res.send('Missing city or district, please choose full information.');
+    }
+
+    DauThauService.getAllData(results.city, results.district, body.startPage, body.endPage)
+    .then(data => res.render('pages/private/dauthau', {
+        data, header, dataInfo
+    }))
     .catch(err => res.send(err));
 });
 

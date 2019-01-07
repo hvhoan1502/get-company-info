@@ -1,4 +1,5 @@
 'use strict'
+
 const { BaseService } = require('./BaseService');
 
 const Constants = require('../../plugins/Constants');
@@ -13,39 +14,33 @@ class BaoThuongMaiService extends BaseService {
         const results = [];
         city = this.formatCity(city);
         for (let i = startPage; i <= endPage; i++) {
-            const uri = i > 1 ? `${Constants.UrlSite.BaoThuongMai}/${city}/page-${i}/` : `${Constants.UrlSite.BaoThuongMai}/${city}/`;
+            const uri = i > 1 ? `${Constants.UrlSite.BaoThuongMai}/${city}/trang-${i}/` : `${Constants.UrlSite.BaoThuongMai}/${city}/`;
             let body = await this.getAllLink(uri);
             body = body.trim();
-            const firstIndex = body.indexOf('<div class="item">');
-            const lastIndex = body.indexOf('<!-- Pagination -->');
-            body = body.substring(firstIndex + 18, lastIndex);
-            body = body.split('<div class="item">');
+            const firstIndex = body.indexOf('<div class="company-item">');
+            const lastIndex = body.indexOf('pagination-container');
+            body = body.substring(firstIndex + 25, lastIndex);
+            body = body.split('<div class="company-item">');
             for(let i = 0; i < body.length; i++) {
                 let link = this.getLinkByContext(body[i]);
-                let data = await this.getDetailCompany(link);
+                let data = await this.getDetailCompany('https:' + link);
                 // Name
-                const firstIndexName = data.indexOf('<strong>');
-                const lastIndexName = data.indexOf('</strong>');
-                const name = data.substring(firstIndexName + 8, lastIndexName);
+                const firstIndexName = data.indexOf('<h1>');
+                const lastIndexName = data.indexOf('</h1>');
+                const name = data.substring(firstIndexName + 4, lastIndexName);
                 //Check status is active or not
-                const firIndexStatus = data.indexOf('Người nộp');
+                const firIndexStatus = data.indexOf('Đang hoạt');
                 const lastIndexStatus = data.indexOf('ĐKT');
                 let status;
                 if (firIndexStatus !== -1 && lastIndexStatus !== -1) {
                     status = data.substring(firIndexStatus, lastIndexStatus + 4);
                 }
-                // dateAllow
-                let index = data.indexOf('Ngày cấp');
-                data = data.substring(index);
-                const firstIndexDate = data.indexOf('<td>');
-                const lastIndexDate = data.indexOf('</td>');
-                const dateAllow = data.substring(firstIndexDate + 4, lastIndexDate);
                 // address
-                index = data.indexOf('Địa chỉ trụ sở');
-                data = data.substring(index + 19);
-                const firstIndexAddress = data.indexOf('<td>');
-                const lastIndexAddress = data.indexOf('(<a');
-                let address = data.substring(firstIndexAddress + 4, lastIndexAddress);
+                let index = data.indexOf('Địa chỉ:');
+                data = data.substring(index + 20);
+                const firstIndexAddress = data.indexOf('cell">')
+                const lastIndexAddress = data.indexOf('</div>');
+                let address = data.substring(firstIndexAddress + 6, lastIndexAddress);
                 // group by key address
                 let firstKeyIndex;
                 let lastKeyIndex;
@@ -79,29 +74,36 @@ class BaoThuongMaiService extends BaseService {
                 }
                 const groupKey = data.substring(firstKeyIndex + 2, lastKeyIndex);
                 // phone number
-                index = data.indexOf('Điện thoại');
-                data = data.substring(index + 14);
-                const firstIndexPhoneNumber = data.indexOf('<td>');
-                const lastIndexPhoneNumber = data.indexOf('</td>');
+                index = data.indexOf('Điện thoại:');
                 let phoneNumber;
-                if(firstIndexPhoneNumber + 4 !== lastIndexPhoneNumber) {
-                    phoneNumber = data.substring(firstIndexPhoneNumber + 4, lastIndexPhoneNumber);
+                if (index !== -1) {
+                    data = data.substring(index + 20);
+                    const firstIndexPhoneNumber = data.indexOf('-cell">');
+                    const lastIndexPhoneNumber = data.indexOf('</div>');
+                    if(firstIndexPhoneNumber + 7 !== lastIndexPhoneNumber) {
+                        phoneNumber = data.substring(firstIndexPhoneNumber + 7, lastIndexPhoneNumber);
+                    }
                 }
                 // DD
-                index = data.indexOf('Chủ sở hữu');
-                data = data.substring(index);
-                const firstIndexMaster = data.indexOf('<td>');
-                const lastIndexMaster = data.indexOf('</td>');
-                const master = data.substring(firstIndexMaster + 4, lastIndexMaster);
+                index = data.indexOf('Đại diện pháp luật:');
+                data = data.substring(index + 20);
+                const firstIndexMaster = data.indexOf('cell">');
+                const lastIndexMaster = data.indexOf('</div>');
+                const master = data.substring(firstIndexMaster + 6, lastIndexMaster);
+                // dateAllow
+                index = data.indexOf('Ngày cấp giấy phép:');
+                data = data.substring(index + 20);
+                const firstIndexDate = data.indexOf('cell">');
+                const lastIndexDate = data.indexOf('</div>');
+                const dateAllow = data.substring(firstIndexDate + 6, lastIndexDate);
                 // Career
-                index = data.indexOf('Ngành nghề kinh doanh');
-                data = data.substring(index);
-                const firsrIndexCareer = data.indexOf('<td>');
-                const lastIndexCareer = data.indexOf('<strong>');
-                const checkCareerIndex = data.indexOf('</td>') ;
+                index = data.indexOf('Ngành nghề kinh doanh:');
+                data = data.substring(index + 20);
+                const firsrIndexCareer = data.indexOf('<strong>');
+                const lastIndexCareer = data.indexOf('</strong>');
                 let field;
-                if (lastIndexCareer < checkCareerIndex) {
-                    field = data.substring(firsrIndexCareer + 4, lastIndexCareer);
+                if (firsrIndexCareer !== -1 && lastIndexCareer !== -1) {
+                    field = data.substring(firsrIndexCareer + 8, lastIndexCareer);
                 }
                 
                 //result
@@ -128,7 +130,7 @@ class BaoThuongMaiService extends BaseService {
 
     static getLinkByContext(context) {
         const firstIndexLink = context.indexOf('<a href=');
-        const lastIndexLink = context.indexOf('.html">');
+        const lastIndexLink = context.indexOf('.html"');
         return context.substring(firstIndexLink + 9, lastIndexLink + 5);
     }
 }

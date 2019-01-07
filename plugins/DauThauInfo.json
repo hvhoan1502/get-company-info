@@ -1,0 +1,390 @@
+{
+    "city": [
+        {
+            "name": "TP.Hồ Chí Minh",
+            "alias": "thanh-pho-ho-chi-minh",
+            "idDT": 701,
+            "district": [
+                {
+                    "name": "Quận 1",
+                    "idDT": "70101%7CQuận+1",
+                    "alias": "quan-1"
+                },
+                {
+                    "name": "Quận 2",
+                    "idDT": "70103%7CQuận+2",
+                    "alias": "quan-2"
+                },
+                {
+                    "name": "Quận 3",
+                    "idDT": "70105%7CQuận+3",
+                    "alias": "quan-3"
+                },
+                {
+                    "name": "Quận 4",
+                    "idDT": "70107%7CQuận+4",
+                    "alias": "quan-4"
+                },
+                {
+                    "name": "Quận 5",
+                    "idDT": "70109%7CQuận+5",
+                    "alias": "quan-5"
+                },
+                {
+                    "name": "Quận 6",
+                    "idDT": "70111%7CQuận+6",
+                    "alias": "quan-6"
+                },
+                {
+                    "name": "Quận 7",
+                    "idDT": "70113%7CQuận+7",
+                    "alias": "quan-7"
+                },
+                {
+                    "name": "Quận 8",
+                    "idDT": "70115%7CQuận+8",
+                    "alias": "quan-8"
+                },
+                {
+                    "name": "Quận 9",
+                    "idDT": "70117%7CQuận+9",
+                    "alias": "quan-9"
+                },
+                {
+                    "name": "Quận 10",
+                    "idDT": "70119%7CQuận+10",
+                    "alias": "quan-10"
+                },
+                {
+                    "name": "Quận 11",
+                    "idDT": "70121%7CQuận+11",
+                    "alias": "quan-11"
+                },
+                {
+                    "name": "Quận 12",
+                    "idDT": "70123%7CQuận+12",
+                    "alias": "quan-12"
+                },
+                {
+                    "name": "Quận Gò Vấp",
+                    "idDT": "70125%7CQuận+Gò+Vấp",
+                    "alias": "quan-go-vap"
+                },
+                {
+                    "name": "Quận Tân Bình",
+                    "idDT": "70127%7CQuận+Tân+Bình",
+                    "alias": "quan-tan-binh"
+                },
+                {
+                    "name": "Quận Tân Phú",
+                    "idDT": "70128%7CQuận+Tân+phú",
+                    "alias": "quan-tan-phu"
+                },
+                {
+                    "name": "Quận Bình Thạnh",
+                    "idDT": "70129%7CQuận+Bình+Thạnh",
+                    "alias": "quan-binh-thanh"
+                },
+                {
+                    "name": "Quận Phú Nhuận",
+                    "idDT": "70131%7CQuận+Phú+Nhuận",
+                    "alias": "quan-phu-nhuan"
+                },
+                {
+                    "name": "Quận Thủ Đức",
+                    "idDT": "70133%7CQuận+Thủ+Đức",
+                    "alias": "quan-thu-duc"
+                },
+                {
+                    "name": "Quận Bình Tân",
+                    "idDT": "70134%7CQuận+Bình+Tân",
+                    "alias": "quan-binh-tan"
+                },
+                {
+                    "name": "Huyện Củ Chi",
+                    "idDT": "70135%7CHuyện+Củ+Chi",
+                    "alias": "huyen-cu-chi"
+                },
+                {
+                    "name": "Huyện Hóc Môn",
+                    "idDT": "70137%7CHuyện+Hóc+Môn",
+                    "alias": "huyen-hoc-mon"
+                },
+                {
+                    "name": "Huyện Bình Chánh",
+                    "idDT": "70139%7CHuyện+Bình+Chánh",
+                    "alias": "huyen-binh-chanh"
+                },
+                {
+                    "name": "Huyện Nhà Bè",
+                    "idDT": "70141%7CHuyện+Nhà+Bè",
+                    "alias": "huyen-nha-be"
+                },
+                {
+                    "name": "Huyện Cần Giờ",
+                    "idDT": "70143%7CHuyện+Cần+Giờ",
+                    "alias": "huyen-can-gio"
+                }
+                
+            ]
+        },
+        {
+            "name": "Tỉnh Đồng Nai",
+            "alias": "tinh-dong-nai",
+            "idDT": 713,
+            "district":[
+                {
+                    "name": "Thành Phố Biên Hòa",
+                    "idDT": "71301%7CThành+phố+Biên+Hòa",
+                    "alias": "thanh-pho-bien-hoa"
+                },
+                {
+                    "name": "Thị Xã Long Khánh",
+                    "idDT": "71302%7CThị+xã+Long+khánh",
+                    "alias": "thi-xa-long-khanh"
+                },
+                {
+                    "name": "Huyện Tân Phú",
+                    "idDT": "71303%7CHuyện+Tân+Phú",
+                    "alias": "huyen-tan-phu"
+                },
+                {
+                    "name": "Huyện Định Quán",
+                    "idDT": "71305%7CHuyện+Định+Quán",
+                    "alias": "huyen-dinh-quan"
+                },
+                {
+                    "name": "Huyện Vĩnh Cửu",
+                    "idDT": "71307%7CHuyện+Vĩnh+Cửu",
+                    "alias": "huyen-vinh-cuu"
+                },
+                {
+                    "name": "Huyện Trảng Bom",
+                    "idDT": "71308%7CHuyện+Trảng+Bom",
+                    "alias": "huyen-trang-bom"
+                },
+                {
+                    "name": "Huyện Thống Nhất",
+                    "idDT": "71309%7CHuyện+Thống+Nhất",
+                    "alias": "huyen-thong-nhat"
+                },
+                {
+                    "name": "Huyện Cẩm Mỹ",
+                    "idDT": "71311%7CHuyện+Cẩm+Mỹ",
+                    "alias": "huyen-cam-my"
+                },
+                {
+                    "name": "Huyện Xuân Lộc",
+                    "idDT": "71313%7CHuyện+Xuân+Lộc",
+                    "alias": "huyen-xuan-loc"
+                },
+                {
+                    "name": "Huyện Long Thành",
+                    "idDT": "71315%7CHuyện+Long+Thành",
+                    "alias": "huyen-long-thanh"
+                },
+                {
+                    "name": "Huyện Nhơn Trạch",
+                    "idDT": "71317%7CHuyện+Nhơn+Trạch",
+                    "alias": "huyen-nhon-trach"
+                }
+            ]
+        },
+        {
+            "name": "Tỉnh Bến Tre",
+            "idDT": 811,
+            "alias": "tinh-ben-tre",
+            "district": [
+                {
+                    "name": "Thành Phố Bến Tre",
+                    "idDT": "81101%7CThành+phố+Bến+Tre",
+                    "alias": "thanh-pho-ben-tre"
+                },
+                {
+                    "name": "Huyện Châu Thành",
+                    "idDT": "81103%7CHuyện+Châu+Thành",
+                    "alias": "huyen-chau-thanh"
+                },
+                {
+                    "name": "Huyện Chợ Lách",
+                    "idDT": "81105%7CHuyện+Chợ+Lách",
+                    "alias": "huyen-cho-lach"
+                },
+                {
+                    "name": "Huyện Mỏ Cày Bắc",
+                    "idDT": "81108%7CHuyện+Mỏ+Cày+Bắc",
+                    "alias": "huyen-mo-cay-bac"
+                },
+                {
+                    "name": "Huyện Mỏ Cày Nam",
+                    "idDT": "81107%7CHuyện+Mỏ+Cày+Nam",
+                    "alias": "huyen-mo-cay-nam"
+                },
+                {
+                    "name": "Huyện Giồng Trôm",
+                    "idDT": "81109%7CHuyện+Giồng+Trôm",
+                    "alias": "huyen-giong-trom"
+                },
+                {
+                    "name": "Huyện Bình Đại",
+                    "idDT": "81111%7CHuyện+Bình+Đại",
+                    "alias": "huyen-binh-dai"
+                },
+                {
+                    "name": "Huyện Ba Tri",
+                    "idDT": "81113%7CHuyện+Ba+Tri",
+                    "alias": "huyen-ba-tri"
+                },
+                {
+                    "name": "Huyện Thạnh Phú",
+                    "idDT": "81115%7CHuyện+Thạnh+Phú",
+                    "alias": "huyen-thanh-phu"
+                }
+            ]
+        },
+        {
+            "name": "Tỉnh Long An",
+            "alias": "tinh-long-an",
+            "idDT":811,
+            "district": [
+                {
+                    "name": "Thành Phố Tân An",
+                    "idDT": "80101%7CThành+phố+Tân+An",
+                    "alias": "thanh-pho-tan-an"
+                },
+                {
+                    "name": "Huyện Tân Hưng",
+                    "idDT": "80103%7CHuyện+Tân+Hưng",
+                    "alias": "huyen-tan-hung"
+                },
+                {
+                    "name": "Huyện Vĩnh Hưng",
+                    "idDT": "80105%7CHuyện+Vĩnh+Hưng",
+                    "alias": "huyen-vinh-hung"
+                },
+                {
+                    "name": "Huyện Mộc Hóa",
+                    "idDT": "80107%7CHuyện+Mộc+Hoá",
+                    "alias": "huyen-moc-hoa"
+                },
+                {
+                    "name": "Huyện Tân Thạnh",
+                    "idDT": "80109%7CHuyện+Tân+Thạnh",
+                    "alias": "huyen-tan-thanh"
+                },
+                {
+                    "name": "Huyện Thạnh Hóa",
+                    "idDT": "80111%7CHuyện+Thạnh+Hoá",
+                    "alias": "huyen-thanh-hoa"
+                },
+                {
+                    "name": "Huyện Đức Huệ",
+                    "idDT": "80113%7CHuyện+Đức+Huệ",
+                    "alias": "huyen-duc-hue"
+                },
+                {
+                    "name": "Huyện Đức Hòa",
+                    "idDT": "80115%7CHuyện+Đức+Hòa",
+                    "alias": "huyen-duc-hoa"
+                },
+                {
+                    "name": "Huyện Bến Lức",
+                    "idDT": "80117%7CHuyện+Bến+Lức",
+                    "alias": "huyen-ben-luc"
+                },
+                {
+                    "name": "Huyện Thủ Thừa",
+                    "idDT": "80119%7CHuyện+Thủ+Thừa",
+                    "alias": "huyen-thu-thua"
+                },
+                {
+                    "name": "Huyện Châu Thành",
+                    "idDT": "80121%7CHuyện+Châu+Thành",
+                    "alias": "huyen-chau-thanh"
+                },
+                {
+                    "name": "Huyện Tân Trụ",
+                    "idDT": "80123%7CHuyện+Tân+Trụ",
+                    "alias": "huyen-tan-tru"
+                },
+                {
+                    "name": "Huyện Cần Đước",
+                    "idDT": "80125%7CHuyện+Cần+Đước",
+                    "alias": "huyen-can-duoc"
+                },
+                {
+                    "name": "Huyện Cần Giuộc",
+                    "idDT": "80127%7CHuyện+Cần+Giuộc",
+                    "alias": "huyen-can-giuoc"
+                },
+                {
+                    "name": "Thị Xã Kiến Tường",
+                    "idDT": "80129%7CThị+xã+Kiến+Tường",
+                    "alias": "thi-xa-kien-tuong"
+                }
+            ]
+        },
+        {
+            "name": "Tiền Giang",
+            "alias": "Tiền Giang",
+            "idDT": 807,
+            "district": [
+                {
+                    "name": "Thành Phố Mỹ Tho",
+                    "idDT": "80701%7CThành+phố+Mỹ+Tho",
+                    "alias": "thanh-pho-my-tho"
+                },
+                {
+                    "name": "Thị Xã Gò Công",
+                    "idDT": "80703%7CThị+xã+Gò+Công",
+                    "alias": "thi-xa-go-cong"
+                },
+                {
+                    "name": "Huyện Tân Phước",
+                    "idDT": "80705%7CHuyện+Tân+Phước",
+                    "alias": "huyen-tan-phuoc"
+                },
+                {
+                    "name": "Huyện Châu Thành",
+                    "idDT": "80707%7CHuyện+Châu+Thành",
+                    "alias": "huyen-chau-thanh"
+                },
+                {
+                    "name": "Huyện Cai lậy",
+                    "idDT": "80709%7CHuyện+Cai+Lậy",
+                    "alias": "huyen-cai-lay"
+                },
+                {
+                    "name": "Huyện Chợ Gạo",
+                    "idDT": "80711%7CHuyện+Chợ+Gạo",
+                    "alias": "huyen-cho-gao"
+                },
+                {
+                    "name": "Huyện Cái Bè",
+                    "idDT": "80713%7CHuyện+Cái+Bè",
+                    "alias": "huyen-cai-be"
+                },
+                {
+                    "name": "Huyện Gò Công Đông",
+                    "idDT": "80717%7CHuyện+Gò+Công+Đông",
+                    "alias": "huyen-go-cong-dong"
+                },
+                {
+                    "name": "Huyện Gò Công Tây",
+                    "idDT": "80715%7CHuyện+Gò+Công+Tây",
+                    "alias": "huyen-go-cong-tay"
+                },
+                {
+                    "name": "Huyện Tân Phú Đông",
+                    "idDT": "80719%7CHuyện+Tân+Phú+Đông",
+                    "alias": "huyen-tan-phu-dong"
+                },
+                {
+                    "name": "Thị Xã Cai Lậy",
+                    "idDT": "80721%7CThị+Xã+Cai+Lậy",
+                    "alias": "thi-xa-cai-lay"
+                }
+            ]
+        }
+    ]
+}
