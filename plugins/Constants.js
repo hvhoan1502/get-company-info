@@ -7,10 +7,11 @@ const Login = {
 const UrlSite = {
     ThongTinCongTy: 'http://www.thongtincongty.com/',
     ThuongHieuToanCau: 'http://thuonghieutoancau.vn/index.php?lang=vi&mod=search&op=company&codetax=&keys=&business=0&location=',
-    BaoThuongMai: 'http://doanhnghiep.baothuongmai.com.vn',
+    BaoThuongMai: 'https://infodoanhnghiep.com',
     DiaChiDoanhNghiep: 'http://diachidoanhnghiep.com/group.asp?menu=province',
     VinaBizCity: 'ttps://vinabiz.org/categories/tinhthanh',
-    VinaBizDistrict: 'https://vinabiz.org/categories/quanhuyen'
+    VinaBizDistrict: 'https://vinabiz.org/categories/quanhuyen',
+    DauThau: 'https://dauthau.info/businesslistings/search/?q=&industry1=&industry2=&industry3=&',
 }
 
 module.exports = {
